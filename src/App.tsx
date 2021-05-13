@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Menu from "./Menu";
+import { useUser } from "./context/user";
+import "./Styles/Design.css";
 
-function App() {
+
+const App = () => {
+  const { user, login,logout } = useUser();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="DivPri">
+      {user ? <Menu/> : <button className="Login" onClick={login}>Login with Google <i className="fab fa-google"></i> </button>}
+      {user ? <button className="Logout"onClick={logout}>Logout</button> : ""}
     </div>
   );
-}
+};
 
 export default App;

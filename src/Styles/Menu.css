@@ -1,0 +1,41 @@
+ i{
+    color: #e84545;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+.canal{
+    border: solid #903749 2px;
+    border-radius: 30px;
+    background-color:#903749 ;
+    width: 20rem;
+    height: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+
+.canal2{
+    border:solid #2b2e4a 2px;
+    border-radius: 30px;
+    background-color:#2b2e4a ;
+    width: 20rem;
+    height: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.guarro{
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+img{
+    border-radius: 20px;
+}

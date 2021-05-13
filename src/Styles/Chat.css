@@ -1,0 +1,52 @@
+.Chats{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    border: #903749 4px solid;
+    border-radius: 20px;
+    padding: 0 2rem;
+}
+
+h2{
+    color:white;
+    color:gray;
+}
+
+
+.Chats img {
+    margin-right:1rem;
+}
+
+input{
+    background-color: #903749;
+    color: white;
+    border-radius: 3px;
+    width: 70%;
+}
+
+.butt{
+    background-color: #53354a;
+    color :white;
+    border-radius: 3px;
+    width:20%;
+    height: 2rem;
+}
+
+@media(max-width: 400px){
+    .Chats{
+        margin-top: 0.5rem; 
+    }
+
+    h2{
+        font-size: 0.9rem;
+    }
+
+    h3{
+        font-size: 0.8rem;
+    }
+
+    .Chats img {
+        width:25;
+        height:25;
+    }
+}
